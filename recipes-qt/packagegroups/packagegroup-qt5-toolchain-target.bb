@@ -87,9 +87,6 @@ RDEPENDS_${PN} += " \
     qtsvg-dev \
     qtsvg-mkspecs \
     qtsvg-plugins \
-    qtsystems-dev \
-    qtsystems-mkspecs \
-    ${@base_contains('DISTRO_FEATURES', 'opengl', 'qtsystems-qmlplugins', '', d)} \
     qttools-dev \
     qttools-mkspecs \
     qttools-staticdev \

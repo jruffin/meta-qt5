@@ -1,6 +1,8 @@
 require qt5.inc
 require qt5-git.inc
 
+QT_MODULE_BRANCH = "5.6"
+
 LICENSE = "BSD & (LGPL-2.1 & The-Qt-Company-Qt-LGPL-Exception-1.1 | LGPL-3.0)"
 LIC_FILES_CHKSUM = " \
     file://LICENSE.LGPLv21;md5=58a180e1cf84c756c29f782b3a485c29 \
@@ -11,4 +13,4 @@ LIC_FILES_CHKSUM = " \
 
 DEPENDS += "qtbase qtdeclarative qtxmlpatterns"
 
-SRCREV = "34d66f3836051dca35a854577fe04b45af3630f2"
+SRCREV = "2a19257a5eef7a25a05d5cf7ea69ecc4184226f3"

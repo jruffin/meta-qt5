@@ -14,7 +14,6 @@ DEPENDS += "qtbase"
 DEPENDS_class-target = "qtdeclarative qtxmlpatterns"
 
 SRC_URI += " \
-    file://0001-Allow-to-build-only-lrelease-lupdate-lconvert.patch \
     file://0002-assistant-help-fix-linking-of-dependent-libraries.patch \
     file://0003-add-noqtwebkit-configuration.patch \
     file://0004-linguist-tools-cmake-allow-overriding-the-location-f.patch \
@@ -32,6 +31,6 @@ PACKAGECONFIG[qtwebkit] = ",,qtwebkit"
 EXTRA_QMAKEVARS_PRE += "${@base_contains('PACKAGECONFIG', 'qtwebkit', '', 'CONFIG+=noqtwebkit', d)}"
 EXTRA_QMAKEVARS_PRE += "${@base_contains('PACKAGECONFIG', 'linguistonly', 'CONFIG+=linguistonly', '', d)}"
 
-SRCREV = "57301c0003e9d776d31953f1411cc06a395b752e"
+SRCREV = "a29927bbb85813841a8e2971073c9c4164eab0a7"
 
 BBCLASSEXTEND = "native nativesdk"
