@@ -16,6 +16,7 @@ DEPENDS += " \
     qtlocation \
     libdrm fontconfig pixman openssl pango cairo icu pciutils \
     libcap \
+    nss \
 "
 
 # when qtbase is built with xcb enabled (default with x11 in DISTRO_FEATURES),
